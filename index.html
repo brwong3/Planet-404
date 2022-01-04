@@ -29,13 +29,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Planet 404.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Planet 404.data.gz",
-        frameworkUrl: buildUrl + "/Planet 404.framework.js.gz",
-        codeUrl: buildUrl + "/Planet 404.wasm.gz",
+        dataUrl: buildUrl + "/Planet 404.data",
+        frameworkUrl: buildUrl + "/Planet 404.framework.js",
+        codeUrl: buildUrl + "/Planet 404.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Planet 404",
-        productVersion: "0.1",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -53,7 +53,7 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
+        canvas.style.width = "800px";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
